@@ -10,13 +10,13 @@ function App() {
   
   useEffect(() => {
     console.log(envs)
-    // NxApiService.CONFIG(envs)
+    NxApiService.CONFIG(envs)
   },[])
   return (
     <div className="App">
       <BrowserRouter>
       <Switch>
-      <Route path='/'  component={Page}>
+      <Route path='/page'  component={Page}>
         
       </Route>
       </Switch>
